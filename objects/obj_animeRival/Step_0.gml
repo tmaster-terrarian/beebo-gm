@@ -238,7 +238,7 @@ switch(state)
             can_dodge = 1;
             if(encounter1)
             {
-                with(oGameManager)
+                with(gm)
                 {
                     audio_sound_gain(current_bgm, 1, 1000);
                 }
@@ -330,7 +330,7 @@ switch(state)
         if(timer0 == 0)
         {
             audio_play_sound(sn_impact, 0, false);
-            with(oGameManager) audio_sound_gain(current_bgm, 0, 500);
+            with(gm) audio_sound_gain(current_bgm, 0, 500);
             with(oCamera)
             {
                 usefollow = 0;

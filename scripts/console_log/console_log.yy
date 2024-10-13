@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "console_log",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+  "$GMScript":"v1",
+  "%Name":"console_log",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"console_log",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

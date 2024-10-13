@@ -62,7 +62,7 @@ if(key_en)
                     if(global.rich_presence == 1)
                     {
                         global.rich_presence = 0
-                        with(oGameManager.neko)
+                        with(gm.neko)
                         {
                             alarm[1] = 1
                         }
@@ -70,7 +70,7 @@ if(key_en)
                     else
                     {
                         global.rich_presence = 1
-                        oGameManager.neko = instance_create_depth(x, y, 0, objNekoPresenceDemo)
+                        gm.neko = instance_create_depth(x, y, 0, objNekoPresenceDemo)
                     }
                     ini_open("save.ini");
                     ini_write_real("settings", "rich_presence", global.rich_presence);

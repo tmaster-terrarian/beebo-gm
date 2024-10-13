@@ -46,7 +46,7 @@ switch(tl_position)
     {
         audio_play_sound(sn_tp, 0, false)
         SetMusic(bgm_project3)
-        with(oGameManager) audio_sound_gain(current_bgm, 1, 0)
+        with(gm) audio_sound_gain(current_bgm, 1, 0)
         with(bonehive)
         {
             target_node = choose(nodes[1], nodes[2], nodes[3], nodes[4])
@@ -55,7 +55,7 @@ switch(tl_position)
         tl_position += 1
         tl_running = 0
         global.cutscene = 0
-        oGameManager.drawbossbar = 1
+        gm.drawbossbar = 1
         break
     }
     case 841:
@@ -103,8 +103,8 @@ switch(tl_position)
     }
     case 870:
     {
-        oGameManager.drawbossbar = 0
-        oGameManager.currentboss = noone
+        gm.drawbossbar = 0
+        gm.currentboss = noone
         with(bonehive)
         {
             MakeExplosion(x, y, 1.5, 1.5, 0.4)

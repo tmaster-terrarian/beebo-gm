@@ -1,6 +1,6 @@
 function SetMusic(sound_id)
 {
-    with(oGameManager)
+    with(gm)
     {
         if(audio_get_name(sound_id) != audio_get_name(current_bgm))
         {
@@ -13,7 +13,7 @@ function SetMusic(sound_id)
 }
 function StopMusic()
 {
-    with(oGameManager)
+    with(gm)
     {
         audio_stop_sound(current_bgm);
         return;

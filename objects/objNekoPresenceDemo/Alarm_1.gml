@@ -5,10 +5,10 @@ if(global.rich_presence)
     else
         var image = "image"
 
-    if(instance_exists(oGameManager))
+    if(instance_exists(gm))
     {
-        if(oGameManager.current_st != -1)
-            np_setpresence("in-game", "Stage: " + string(oGameManager.current_st), image, "");
+        if(gm.current_st != -1)
+            np_setpresence("in-game", "Stage: " + string(gm.current_st), image, "");
         else
             np_setpresence("menu", "", image, "");
     }

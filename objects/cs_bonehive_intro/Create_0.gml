@@ -5,7 +5,7 @@ gate1 = noone
 gate2 = noone
 
 bonehive = instance_create_depth(x, y + 64, 300, obj_boss_bonehive)
-oGameManager.currentboss = bonehive
+gm.currentboss = bonehive
 if(global.bonehive_started == 0)
 {
     global.bonehive_started = 1
@@ -18,7 +18,7 @@ if(global.bonehive_started == 0)
     {
         state = "intro"
     }
-    with(oGameManager) audio_sound_gain(current_bgm, 0, 1000)
+    with(gm) audio_sound_gain(current_bgm, 0, 1000)
     introsound = audio_play_sound(sn_bonehive_intro, 0, false)
     global.cutscene = 1
 }
@@ -35,7 +35,7 @@ else
         timer0 = -1
     }
     SetMusic(bgm_project3)
-    with(oGameManager) audio_sound_gain(current_bgm, 1, 0)
-    oGameManager.drawbossbar = 1
+    with(gm) audio_sound_gain(current_bgm, 1, 0)
+    gm.drawbossbar = 1
     tl_position = 60 * 14
 }

@@ -27,7 +27,7 @@ with(oCamera) target = other.id;
 rm = room;
 bg = instance_create_depth(0, 0, 752, obj_death_bg);
 
-with(oGameManager) audio_sound_gain(current_bgm, 0, 0);
+with(gm) audio_sound_gain(current_bgm, 0, 0);
 var sound = audio_play_sound(sn_slowmo, 2, false);
 
 with(oCamera) if(follow == obj_player) follow = other;

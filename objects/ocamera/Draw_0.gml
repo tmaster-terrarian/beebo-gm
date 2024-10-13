@@ -47,12 +47,12 @@ if(draw_ui)
         draw_sprite(spr_hud_bombtimer, 0, xpos + offsetx + 13, ypos + offsety + 9);
     }
 
-    if(oGameManager.drawbossbar)
+    if(gm.drawbossbar)
     {
         var c = c_black
         draw_rectangle_color(xpos + 34, ypos + 131, xpos + 249, ypos + 138, c, c, c, c, false)
 
-        var b = oGameManager.currentboss
+        var b = gm.currentboss
         if(instance_exists(b) && b.hp)
         {
             draw_sprite_ext(spr_bossbar_fill, 0, xpos + 34, ypos + 131, (b.hp / b.hpmax) * 216, 1, 0, c_white, 1)

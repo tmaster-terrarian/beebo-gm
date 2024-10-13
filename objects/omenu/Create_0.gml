@@ -20,4 +20,4 @@ menu_cursor = 2;
 
 menu_top = menu_y - ((menu_itemheight * 1) * menu_items);
 
-gamemanager = oGameManager;
+gamemanager = gm;

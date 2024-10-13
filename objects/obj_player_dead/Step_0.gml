@@ -111,7 +111,7 @@ if(keyboard_check_pressed(vk_space)) || (keyboard_check_pressed(vk_enter)) || (g
 {
 	global.pausetimer = false;
 	global.playerhealth = hp_max;
-	with(oGameManager) {audio_sound_gain(current_bgm, 1, 500); audio_sound_set_track_position(current_bgm, 0)}
+	with(gm) {audio_sound_gain(current_bgm, 1, 500); audio_sound_set_track_position(current_bgm, 0)}
 	gm_room_transition_direct(rm, TRANS_TYPE.BOX);
 	scr_particle_explode2();
 }

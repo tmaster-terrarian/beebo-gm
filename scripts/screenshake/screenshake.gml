@@ -9,7 +9,7 @@ function ScreenShake(_magnitude, _frames, _stop_player = false)
 			shake_length = _frames;
 			if(_stop_player)
 			{
-				oGameManager.controltimer = _frames;
+				gm.controltimer = _frames;
 			}
 		}
 	}
@@ -23,7 +23,7 @@ function ScreenShakeCursed(_magnitude, _frames, _stop_player = false)
 		shake_length = _frames;
 		if(_stop_player)
 		{
-			oGameManager.controltimer = _frames;
+			gm.controltimer = _frames;
 		}
 	}
 }

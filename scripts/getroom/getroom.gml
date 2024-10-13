@@ -1,6 +1,6 @@
 function GetRoom(_room)
 {
-    with(oGameManager)
+    with(gm)
     {
         var rm_i = 0;
         for(i = 0; i < array_length(stages); i++)
@@ -20,7 +20,7 @@ function GetRoom(_room)
 }
 function GetStage(_room)
 {
-    with(oGameManager)
+    with(gm)
     {
         var rm_i = 0;
         for(var i = 0; i < array_length(stages); i++)
