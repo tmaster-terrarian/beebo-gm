@@ -3,7 +3,7 @@
   "%Name":"Main",
   "name":"Main",
   "option_author":"",
-  "option_collision_compatibility":true,
+  "option_collision_compatibility":false,
   "option_copy_on_write_enabled":false,
   "option_draw_colour":4294967295,
   "option_gameguid":"bdc695d7-9f24-474a-a773-6860130f2676",

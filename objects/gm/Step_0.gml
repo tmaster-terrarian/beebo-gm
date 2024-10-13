@@ -59,7 +59,6 @@ if(mode != TRANS_MODE.OFF)
                     game_restart()
                     return
                 }
-            break
         }
     }
 }

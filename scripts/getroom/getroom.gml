@@ -10,7 +10,6 @@ function GetRoom(_room)
                 if(rm_list[rm_i] == _room)
                 {
                     return rm_list[rm_i];
-                    break;
                 }
                 else rm_i++;
             }
@@ -30,7 +29,6 @@ function GetStage(_room)
                 if(rm_list[rm_i] == _room)
                 {
                     return i;
-                    break;
                 }
                 else rm_i++;
             }
