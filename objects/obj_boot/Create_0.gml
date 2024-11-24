@@ -5,7 +5,7 @@ started = 0;
 anim_timer = 0; //200 frames is 3.33 seconds, right when the dos boots in the sound that plays. the entire sound is 1882.2 frames long
 boot_sound = noone;
 
-t_scale = (1/3);
+t_scale = 1;
 t_pad_x = 1 + 36;
 t_pad_y = 1;
 t_line_size = 7;

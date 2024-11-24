@@ -3,6 +3,7 @@
   "%Name":"obj_trigger_spawner",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_trigger_spawner",
@@ -41,5 +42,5 @@
     "path":"sprites/spr_trigger/spr_trigger.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

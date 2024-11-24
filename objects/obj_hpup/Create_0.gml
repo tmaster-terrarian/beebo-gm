@@ -1,3 +1,5 @@
+event_inherited();
+
 hsp = random_range(-0.5, 0.5);
 vsp = random_range(-2, -1);
 grv = 0.075;
